@@ -36,9 +36,6 @@ const Home = (props) => {
       console.log("here");
 
       setDataStatus(true);
-
-      // displayPagination(allPosts);
-      //   const finalPosts = allPosts.toArray();
     } catch (err) {
       console.log(err);
     }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="scaleOnEnter.js"></script>
+    <script src="randomColor.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-asset>
+        <img id="skyTexture" src="https://i.imgur.com/ZqNnWgb.jpg" />
+      </a-asset>
+      <a-box
+        color="red"
+        position="0 0 -5"
+        scale-on-mouseenter
+        random-color
+      ></a-box>
+      <a-sky
+        radius="200"
+        segments-height="6"
+        segments-width="6"
+        visible=""
+        geometry=""
+        material="shader: flat; offset: [object Object]; repeat: [object Object]; color: #d9c9a6"
+      ></a-sky>
+      <a-plane
+        rotation="-90 0 0"
+        width="30"
+        height="30"
+        material="offset: [object Object]; repeat: [object Object]; ambientOcclusionTextureOffset: [object Object]; ambientOcclusionTextureRepeat: [object Object]; color: #746244; displacementTextureOffset: [object Object]; displacementTextureRepeat: [object Object]; metalness: 0.1; normalScale: [object Object]; normalTextureOffset: [object Object]; normalTextureRepeat: [object Object]; roughness: 1"
+      ></a-plane>
+      <a-entity camera look-controls wasd-controls position="0 1.6 0">
+        <a-sphere
+          color="red"
+          position="0 0 -5"
+          scale-on-mouseenter
+          random-color
+        ></a-sphere
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>

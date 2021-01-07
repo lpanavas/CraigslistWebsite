@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
-    "serverstart": "npm start"
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "serverstart": "npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
